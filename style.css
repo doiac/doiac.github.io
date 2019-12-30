@@ -1,0 +1,34 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: "Microsoft JhengHei","Comic Sans MS";
+  font-size: 30px;
+  height: 100%;
+}
+a {
+  /* vertical-align:middle; */
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #404040;
+  /* text-decoration: underline; */
+}
+.box{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+.content{
+  width: 400px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+}

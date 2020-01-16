@@ -4,67 +4,10 @@
 function start(){
   showtime();
   reset_screen();
-  clear();
-  // $('#home img').attr('src','images/Icon/Home_Icon_clicked.svg');
-  // HomeisClicked = true;
-  // $('.home').css("display","block");
   check_footer();
   // $("#loading .pic").animate({
   //     width: "85%"
   // }, 100);
-  // var button_0 = [];
-  // var button_1 = [];
-  // for(let i = 0;i < 3;i++)
-  //   button_0[i] = document.getElementById('menu-0-option'+i);
-  // for(let i = 0;i < 2;i++)
-  //   button_1[i] = document.getElementById('menu-1-option'+i);
-  // for(let i = 0;i < 3;i++){
-  //   button_0[i].addEventListener('click', function(){
-  //     clear();
-  //     $('#0').css('color','#4D1F00');
-  //     // $('#menu-0').hide(500);
-  //     $('.menu-0-content-'+i).css("display","block");
-  //     check_footer();
-  //   }, false);
-  // }
-  // for(let i = 0;i < 2;i++){
-  //   button_1[i].addEventListener('click', function(){
-  //     clear();
-  //     $('#1').css('color','#4D1F00');
-  //     // $('#menu-1').hide(500);
-  //     $('.menu-1-content-'+i).css("display","block");
-  //     check_footer();
-  //   }, false);
-  // }
-  // document.getElementById('2').addEventListener('click', function(){
-  //   clear();
-  //   $('#2').css('color','#4D1F00');
-  //   $('.menu-2-content').css("display","block");
-  //   reset_screen();
-  //   check_footer();
-  // },false);
-  // document.getElementById('home').addEventListener('click', function(){
-  //   clear();
-  //   HomeisClicked = true;
-  //   $('#home img').attr('src','images/Icon/Home_Icon_clicked.svg');
-  //   $('.home').css("display","block");
-  //   check_footer();
-  // },false);
-  // document.getElementById('to_menu_0_content_1').addEventListener('click',function(){
-  //   button_0[1].click();
-  // },false);
-  // document.getElementById('to_menu_0_content_2').addEventListener('click',function(){
-  //   button_0[2].click();
-  // },false);
-  // $('#home img').hover(function(){
-  //   $(this).attr('src','images/Icon/Home_Icon_clicked.svg');
-  // },
-  // function() {
-  //     if(HomeisClicked)
-  //       return false;
-  //     $(this).attr('src','images/Icon/Home_Icon.svg');
-  //   }
-  // );
   window.addEventListener('resize', reset_screen, true);
   // $("#loading .pic").animate({
   //     width: "90%"
@@ -104,44 +47,14 @@ function start(){
   // });
 }
 
-function clear() {
-  // HomeisClicked = false;
-  for(let i = 0;i < 3;i++)
-    $('#'+i).css('color','inherit');
-  // $('#home img').attr('src','images/Icon/Home_Icon.svg');
-  // $('.home').css('display','none');
-  // for(let i = 0;i < 2;i++){
-  //   for(let j = 0;j < 3;j++){
-  //     if($('.menu-'+i+'-content-'+j).length)
-  //       $('.menu-'+i+'-content-'+j).css("display","none");
-  //   }
-  // }
-  // $('.menu-2-content').css("display","none");
-}
-
 function check_footer() {
   $("center").css('height',$('.show_content').height());
-  // console.log($("center").height());
-  // console.log($(window).height());
-  // console.log($("#menu_top").height());
-  // console.log($("footer").height());
-  // console.log($("center").height()-$("#menu_top").height()-$("footer").height());
-  // console.log($('.content-background').height());
   if($("center").height()-$("#menu_top").height()+$("footer").height()<$(window).height())
     $("center").css('height',$('.content-background').height()-$("footer").height()+'px');
 }
 function reset_screen() {
-  $('.content-background').css('height',$(window).height());
+  // $('.content-background').css('height',$(window).height());
   $('.center').css('height',$('header').height()-10+'px');
-  // $('.paydiv-wrapper').css('height',$(window).height())+'px';
-  if($(window).width()>800){
-    $('#map').css('width',600);
-    $('#poster').css('width',600);
-  }
-  else{
-    $('#map').css('width',$(window).width()-250);
-    $('#poster').css('width',$(window).width()-200);
-  }
   if($(window).width()>840){
     document.getElementById('menu_separate-1').innerHTML = '&ensp;✧&ensp;';
   }
@@ -165,13 +78,9 @@ function reset_screen() {
 
   reset_img_container();
 
-  for(let i = 0;i < 3; i++){
-    $('.home-content-'+i).css('padding-left',100+'px');
-    $('.home-content-'+i).css('padding-right',100+'px');
-  }
-  $('#menu_top nav').each(function(){
-    $(this).find('ul').css('width',$(this).width()+'px');
-  });
+  // $('#menu-0').css('width','170px');
+  // $('#menu-0').css('margin-left','-10px');
+  // $('#menu-1').css('width','150px');
   // $('ol').each(function(){
     // console.log($(this));
     // console.log($(this)[0].childNodes[1].offsetWidth);

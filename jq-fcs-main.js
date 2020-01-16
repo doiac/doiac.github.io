@@ -37,7 +37,6 @@ $(document).ready(function(){
   });
 
   $(window).resize(function() {
-    reset_summary();
     if($(window).scrollTop()>=$("header").height()){
         $('#menu_top').css('top','0%');
         $('#menu_top').css('left','50%');

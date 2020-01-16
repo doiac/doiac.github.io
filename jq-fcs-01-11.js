@@ -2,6 +2,9 @@ $(document).ready(function(){
   reset_summary();
   $('#0').css('color','#4D1F00');
   $('#1').css('color','#4D1F00');
+  $(window).resize(function(){
+    reset_summary();
+  });
 });
 
 function reset_summary() {

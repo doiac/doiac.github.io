@@ -1,0 +1,47 @@
+div.home-content-0{
+  /* text-align: left; */
+  padding: 50px;
+}
+
+.home-content-0 h1{
+  display:inline;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: normal;
+}
+
+.download a:hover{
+  color: #8332a8;
+  text-decoration: underline;
+}
+
+div.home-content-1{
+  /* text-align: left; */
+  padding: 50px;
+}
+
+div.home-content-2{
+  /* text-align: left; */
+  padding: 50px;
+}
+
+#map {
+  opacity: 0.9;
+  z-index: 0;
+}
+
+.jump{
+  color: inherit;
+  text-decoration-color: gray;
+  text-decoration-line: underline;
+  text-decoration-style:dotted;
+}
+
+.jump:hover {
+  color: #4D1F00;
+  text-decoration-color: #4D1F00;
+  text-decoration-style:solid;
+}

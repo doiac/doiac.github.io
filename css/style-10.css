@@ -1,0 +1,31 @@
+
+div.menu-1-content-0 a {
+  color: inherit;
+}
+
+div.menu-1-content-0 a:hover {
+  color: #4D1F00;
+}
+
+.menu-1-content-0 ol a {
+  font-family: SGB, DFKai-sb;
+}
+.menu-1-content-0 ol li{
+  text-align: left;
+  width: 100%;
+}
+
+a.sign_up{
+  text-decoration-color: gray;
+  text-decoration-line: underline;
+  text-decoration-style:dotted;
+  font-size: 15px;
+  text-align: center;
+  color: inherit;
+}
+
+a.sign_up:hover{
+  color: #4D1F00;
+  text-decoration-color: #4D1F00;
+  text-decoration-style:solid;
+}

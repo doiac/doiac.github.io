@@ -4,7 +4,6 @@
 function start(){
   showtime();
   reset_screen();
-  check_footer();
   // $("#loading .pic").animate({
   //     width: "85%"
   // }, 100);
@@ -49,8 +48,11 @@ function start(){
 
 function check_footer() {
   $("center").css('height',$('.show_content').height());
-  if($("center").height()-$("#menu_top").height()+$("footer").height()<$(window).height())
-    $("center").css('height',$('.content-background').height()-$("footer").height()+'px');
+  if($(window).scrollTop()>$('header').height() && $("center").height()<$(window).height()-$('footer').height()){
+    $("center").css('height',$(window).height()-$('footer').height()+'px');
+  }
+  else if($(window).scrollTop()<$('header').height() && $("center").height()+$("header").height()+$("footer").height()<$(window).height())
+    $("center").css('height',$(window).height()-$('header').height()-$('footer').height()+'px');
 }
 function reset_screen() {
   // $('.content-background').css('height',$(window).height());

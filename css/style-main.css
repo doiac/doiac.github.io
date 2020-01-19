@@ -264,8 +264,8 @@ header nav#showbox {
 
 .menu nav div{
   position: relative;
-  vertical-align: bottom;
-  bottom: -5px;
+  vertical-align: top;
+  /* bottom: -5px; */
   /* padding-top: 5px; */
 }
 
@@ -276,6 +276,7 @@ li.space{
 li.menu_bottom{
   /* border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px; */
+  border-bottom: none;
   z-index: 6;
 }
 
@@ -308,13 +309,7 @@ li.menu_bottom{
   width: 160px;
   box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.7);
 }
-.menu nav ul#menu-0{
-  width: 170px;
-  margin-left: -10px;
-}
-.menu nav ul#menu-1{
-  width: 150px;
-}
+
 .menu li:hover {
   background-color: #DE7C5A;
 }
@@ -322,16 +317,23 @@ li.menu_bottom{
   color: #404040;
   /* background-color: rgba(253,231,185,0.9); */
   background-color: rgba(255,255,255,1);
-  /* border-color: Navy; */
   width: 100%;
   float: left;
   position: relative;
   text-align: left;
   /* display:inline-block; */
   z-index: 5;
-  /* border: 2px solid Navy; */
+  /* border: 1px solid black; */
 }
-
+.menu nav ul#menu-0{
+  width: auto;
+  height: auto;
+  /* margin-left: -10px; */
+}
+.menu nav ul#menu-1{
+  width: auto;
+  height: auto;
+}
 .menu h3{
   text-align: center;
   display: inline-flex;
@@ -363,7 +365,7 @@ div.list_content{
   list-style-type: decimal;
   margin-top: 1em;
   margin-bottom: 1em;
-  margin-left: 0;
+  margin-left: 0px;
   margin-right: 0;
   padding-left: 40px;
   width: 60%;
@@ -523,6 +525,15 @@ footer nav{
     100% { left: 0; }
 }
 
+@media only screen and (max-width:840px){
+  .menu {
+    font-size: 70%;
+  }
+  #home-icon {
+    height: 20px;
+  }
+}
+
 @media only screen and (max-width:645px){
   header {
     height: auto;
@@ -621,30 +632,45 @@ footer nav{
   }
 }
 
+@media (max-width: 270px) {
+  .menu {
+    font-size: auto;
+  }
+}
+
+@media (max-width: 350px) {
+  .menu {
+    font-size: 60%;
+  }
+}
+
 @media (max-width: 400px) {
   body {
    font-size: calc(0.6rem + (1.3-1.2) * ((100vw - 600px) / (1200 - 600)));
   }
-  .menu nav ul#menu-0{
+  /* .menu nav ul#menu-0{
     width: 95px;
     margin-left: -5px;
-  }
-  .menu nav ul#menu-1{
+  } */
+  /* .menu nav ul#menu-1{
     width: 83px;
-  }
+  } */
 }
 
 @media (min-width: 400px) and (max-width: 600px) {
   body {
    font-size: calc(0.6rem + (1.3-1.2) * ((100vw - 600px) / (1200 - 600)));
   }
-  .menu nav ul#menu-0{
+  #home-icon {
+    height: 15px;
+  }
+  /* .menu nav ul#menu-0{
     width: 95px;
     margin-left: -5px;
-  }
-  .menu nav ul#menu-1{
+  } */
+  /* .menu nav ul#menu-1{
     width: 83px;
-  }
+  } */
 }
 
 @media (min-width: 600px) and (max-width: 1200px) {

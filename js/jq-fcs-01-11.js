@@ -8,7 +8,7 @@ $(document).ready(function(){
 });
 
 function reset_summary() {
-  for(let i=0;i<4;i++){
+  for(let i=0;i<5;i++){
     $('#logo-'+i).css('height','auto');
     $('#summary-title-'+i).css('height','auto');
     $('#logo-'+i).css('width',$('#summary-'+i).width()*0.4);
@@ -22,7 +22,7 @@ function reset_summary() {
     else
       $('#logo-'+i).css('height',$('#summary-title-'+i).height());
     if($(window).width()<1070){
-      for(let i = 0;i < 4;i++)
+      for(let i = 0;i < 5;i++)
         $('#summary-title-'+i).css('line-height','normal');
     }
     else

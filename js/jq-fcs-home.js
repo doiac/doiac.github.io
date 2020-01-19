@@ -1,5 +1,3 @@
-var click = false;
-
 $(document).ready(function(){
   if($(window).width()>800)
     $('#map').css('width',600);

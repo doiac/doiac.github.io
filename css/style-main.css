@@ -172,10 +172,12 @@ header nav#showbox {
 }
 
 .article {
-  position: relative;
+  z-index: 2;
+  position: absolute;
+  /* position: relative;
   z-index: 2;
   font-family: W2020doiac;
-  color: #F2D630;
+  color: #F2D630; */
   /* text-shadow:
        5px 5px 0 #000,
      -1px -1px 0 #000,
@@ -194,13 +196,10 @@ header nav#showbox {
   z-index: 1;
 }
 
-.first {
-  /* font-size: 130%; */
+/* .first {
   position: relative;
   top: -10px;
   right: -20px;
-  /* -webkit-text-stroke: 0.001em black; */
-  /* font-weight: bold; */
 }
 
 .first-first {
@@ -212,8 +211,8 @@ header nav#showbox {
   position: relative;
   left: -20px;
   bottom: -25px;
-  /* -webkit-text-stroke: 0.001em black; */
-}
+} */
+
 
 .menu {
   /* background-image: url("images/menu-back.jpg");
@@ -232,11 +231,6 @@ header nav#showbox {
   color: rgba(0, 0, 0, 0.7);
   z-index: 5;
   border-bottom: 5px outset #BDC2BF;
-}
-@media only screen and (max-width:850px) {
-  .menu {
-    width: 100%;
-  }
 }
 
 .menu a{
@@ -298,6 +292,7 @@ li.menu_bottom{
 .center-to-head:hover::after{
 	transform:scale3d(1,1,1);
 }
+
 
 .menu nav ul{
   list-style: none;
@@ -534,6 +529,12 @@ footer nav{
   }
 }
 
+@media only screen and (max-width:850px) {
+  .menu {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width:645px){
   header {
     height: auto;
@@ -541,6 +542,7 @@ footer nav{
   }
   header nav {
     /* border: 1px solid black; */
+    text-align: center;
     height: auto;
     float: none;
   }
@@ -550,13 +552,13 @@ footer nav{
   header h1{
     margin: 0;
   }
-  .article{
+  /* .article{
     vertical-align:text-top;
     height: 75px;
     align-content:center;
-    /* text-align: center; */
-  }
-  .first {
+    text-align: center;
+  } */
+  /* .first {
     font-size: 100%;
     top: 0px;
     right: 0px;
@@ -564,7 +566,7 @@ footer nav{
   .second {
     left: 0px;
     bottom: 0px;
-  }
+  } */
   .center {
     position: relative;
     display: none;
@@ -595,10 +597,10 @@ footer nav{
     /* border: 1px black solid; */
     float: none;
   }
-  .article{
+  /* .article{
     height: auto;
     position: relative;
-  }
+  } */
   .center {
     position: relative;
     left: 0;
@@ -625,10 +627,16 @@ footer nav{
   }
 }
 
+@media (max-width: 888px){
+  .article {
+    position: inherit;
+  }
+}
+
+
 @media (max-width: 600px){
   .article {
-    margin-top: 30px;
-    height: 40px;
+    height: 50px;
   }
 }
 

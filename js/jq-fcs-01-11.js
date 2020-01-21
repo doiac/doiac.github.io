@@ -1,7 +1,9 @@
 $(document).ready(function(){
+  showtime();
   $('#0').css('color','#4D1F00');
   $('#1').css('color','#4D1F00');
   $(window).resize(function(){
+    reset_screen();
     reset_summary();
   });
 });
@@ -20,6 +22,7 @@ function reset_summary() {
     //   $('#summary-title-'+i).css('line-height',$('#summary-title-'+i).height()/2+'px');
   }
   aligned();
+  check_footer();
 }
 
 function aligned(){

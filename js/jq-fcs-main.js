@@ -10,6 +10,7 @@ $(document).ready(function(){
         $('#menu_top').css('left','50%');
         $('#menu_top').css('margin-left','-'+$('#menu_top').width()/2+'px');
         $('#menu_top').css('position','fixed');
+        $('.menu').css('background-color','rgba(249,245,255, 0.7)');
     }
     else {
         $('#prepend_for_menu').remove();
@@ -17,6 +18,7 @@ $(document).ready(function(){
         $('#menu_top').css('top','');
         $('#menu_top').css('left','');
         $('#menu_top').css('margin-left','');
+        $('.menu').css('background-color','rgba(249,245,255, 1)');
     }
   });
 
@@ -52,17 +54,17 @@ $(document).ready(function(){
   );
   $(function(){
     $(".menu #nav-0").hover(function() {
-      $("#menu-0").stop(true).show('slow');
+      $("#menu-0").stop(true).show(100);
     },
     function() {
-        $('#menu-0').stop(true).hide('slow');
+        $('#menu-0').stop(true).hide(100);
       }
     );
     $(".menu #nav-1").hover(function() {
-      $("#menu-1").stop(true).show('slow');
+      $("#menu-1").stop(true).show(100);
     },
     function() {
-        $('#menu-1').stop(true).hide('slow');
+        $('#menu-1').stop(true).hide(100);
       }
     );
   });

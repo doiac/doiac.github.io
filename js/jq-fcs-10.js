@@ -1,13 +1,13 @@
 $(document).ready(function(){
-  $('#1').css('color','#4D1F00');
-  $('#menu-1-option0').css('color','#4D1F00');
-  $('#ic-0').css('color','#4D1F00');
+  $('#1').css('color','#28262C');
+  $('#menu-1-option0').css('color','#28262C');
+  $('#ic-0').css('color','#28262C');
   $('#c-0').css('display','block');
   if($(window).width()>1000)
     $('.title').css('width','200px');
   else
     $('.title').css('width','20%');
-  // $('.c-title').css('margin-left',$('.title').width()+'px');  
+  $('.c-title').css('margin-left',$('.title').width()+'px');
   $('.list_content ol').css('margin-left',$('.title').width()+'px');
   $(window).resize(function(){
     if($(window).width()>1000)

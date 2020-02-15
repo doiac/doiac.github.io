@@ -2,7 +2,8 @@
 // background = "images/backgroundt.png";
 
 function start(){
-  showtime();
+  // showtime();
+  document.getElementById('showbox').innerHTML = "最後更新：<span class='alpa_num'>2020.02.15</span>&ensp;"
   reset_screen();
   window.addEventListener('resize', reset_screen, false);
 }

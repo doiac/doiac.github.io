@@ -1,4 +1,5 @@
 function printlist(){
+  check_footer();
   var button = [];
   for(let i = 0 ; i < 9; i++)
     button[i] = document.getElementById('ic-'+i);

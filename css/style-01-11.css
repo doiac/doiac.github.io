@@ -1,5 +1,5 @@
 #menu-0-option1, #menu-1-option1 {
-  color :#4D1F00;
+  color :#28262C;
 }
 
 div.content-1-content {
@@ -22,30 +22,73 @@ div.content-1-content {
     margin: 0;
     font-weight: bold;
 }
+table{
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
+table,th,td{
+  border: 1px solid black;
+}
+
+table{
+  width: 100%;
+  background-color: rgba(244,243,238, 0.7);
+  border-collapse: collapse;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+thead,tfoot{
+  background-color: rgba(138,129,124,0.9);
+}
+
+tfoot {
+  text-align: right;
+}
+
+caption{
+  position: relative;
+}
+
+.table-count{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 70%;
+}
+a.cp_name{
+  color: inherit;
+}
+a.cp_name:hover{
+  color: #28262C;
+  text-decoration-line: underline;
+  text-decoration-color: #28262C;
+  text-decoration-style:solid;
+}
 
 a.sign_up{
-  text-decoration-color: gray;
+  text-decoration-color: black;
   text-decoration-line: underline;
   text-decoration-style:dotted;
-  font-size: 15px;
   text-align: center;
   color: inherit;
 }
 
 a.sign_up:hover{
-  color: #4D1F00;
-  text-decoration-color: #4D1F00;
+  color: #28262C;
+  text-decoration-color: #28262C;
   text-decoration-style:solid;
 }
 
 div.content-1-info{
-  width: 70%;
+  width: 80%;
   height: auto;
   /* border: 5px solid black; */
 }
 
 div.info {
-  padding: 5px;
+  padding-bottom: 100px;
   text-align: center;
   width: 100%;
   height: auto;
@@ -57,7 +100,7 @@ div.summary {
   /* border: 5px solid blue; */
   height: auto;
   width: 100%;
-  background: rgba(116, 140, 171, 0.5);
+  background-color: rgba(249,245,255, 0.8);
   /* text-shadow:
        5px 5px 0 #000,
      -1px -1px 0 #000,
@@ -91,6 +134,7 @@ div.logo img{
 div.summary-title {
   margin: 0 auto;
   float: right;
+  height: auto;
   vertical-align: middle;
   text-align: center;
   /* border-bottom: 2px dashed white; */

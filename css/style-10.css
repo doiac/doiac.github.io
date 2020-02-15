@@ -30,11 +30,6 @@ div.title{
     width: auto;
   }
 }
-@media (max-width:605px){
-  div.title{
-    height: auto;
-  }
-}
 
 @media (min-width:600px) and (max-width:690px){
   div.title{
@@ -56,7 +51,6 @@ div.title{
   div.title{
     font-size: 60%;
     width: auto;
-    height: 150px;
   }
 }
 

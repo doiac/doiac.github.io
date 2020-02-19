@@ -3,6 +3,7 @@ $(document).ready(function(){
   $('#menu-1-option0').css('color','#28262C');
   $('#ic-0').css('color','#28262C');
   $('#c-0').css('display','block');
+  check_footer();
   if($(window).width()>1000)
     $('.title').css('width','200px');
   else

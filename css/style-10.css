@@ -10,6 +10,10 @@ div.small{
   display: inline-block;
   font-size: 60%;
 }
+span.alert{
+  font-size: 120%;
+  color: red;
+}
 div.title{
   font-size: 70%;
   position: absolute;

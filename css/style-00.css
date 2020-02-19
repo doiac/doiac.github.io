@@ -1,3 +1,8 @@
+.content-0-content-0 img{
+  display: block;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
 .pdf-link {
   text-decoration: underline;
   text-decoration-style: dotted;

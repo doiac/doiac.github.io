@@ -4,6 +4,10 @@ div.home-poster{
   line-height: 1;
   vertical-align:top;
 }
+.home-poster img{
+  display: block;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
 
 div.home-content-0{
   height: auto;
@@ -63,7 +67,10 @@ div.map-content{
   top: 5px;
   line-height: 1;
   vertical-align:middle;
-  box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.map-image img{
+  display: block;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
 }
 
 .sbs {

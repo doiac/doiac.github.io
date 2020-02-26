@@ -3,7 +3,7 @@
 
 function start(){
   // showtime();
-  document.getElementById('showbox').innerHTML = "最後更新：<span class='alpa_num'>2020.02.20</span>&ensp;"
+  document.getElementById('showbox').innerHTML = "最後更新：<span class='alpa_num'>2020.02.26</span>&ensp;"
   reset_screen();
   window.addEventListener('resize', reset_screen, false);
 }

@@ -121,3 +121,7 @@ a.sign_up{
 a.sign_up:hover{
   color: #28262C;
 }
+
+span.alert{
+  color: red;
+}

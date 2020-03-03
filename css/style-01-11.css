@@ -147,6 +147,10 @@ div.summary-title {
   height: 100%;
 } */
 
+span.alert{
+  color: red;
+}
+
 p.summary-text{
   float: left;
   text-align: left;

@@ -235,6 +235,7 @@ center {
   display: inline-block;
   margin: 0px auto;
   vertical-align: bottom;
+  border-radius: 5px;
   /* border: 1px solid black; */
   /* float: none; */
 }

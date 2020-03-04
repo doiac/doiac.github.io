@@ -23,4 +23,5 @@ function align_poster(){
     if($(this).height()>min)min = $(this).height();
   });
   $('.poster-img').css('min-height',min+'px');
+  check_footer();
 }

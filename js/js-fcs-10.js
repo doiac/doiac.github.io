@@ -1,9 +1,9 @@
 function printlist(){
   check_footer();
   var button = [];
-  for(let i = 0 ; i < 9; i++)
+  for(let i = 0 ; i < 8; i++)
     button[i] = document.getElementById('ic-'+i);
-  for(let i = 0 ; i < 9; i++){
+  for(let i = 0 ; i < 8; i++){
     button[i].addEventListener('click',function(){
       clear();
       document.getElementById('ic-'+i).style.color = '#28262C';
@@ -14,7 +14,7 @@ function printlist(){
 }
 
 function clear(){
-  for(let i = 0 ; i < 9; i++){
+  for(let i = 0 ; i < 8; i++){
     document.getElementById('ic-'+i).style.color = 'inherit';
     document.getElementById('c-'+i).style.display = 'none';
   }

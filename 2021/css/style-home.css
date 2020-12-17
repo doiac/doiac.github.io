@@ -1,0 +1,151 @@
+div.home-poster{
+  width: 80%;
+  background-color: rgba(249,245,255, 0.7);
+  line-height: 1;
+  vertical-align:top;
+}
+.home-poster img{
+  display: block;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+span.title_caption{
+  font-size: 150%;
+}
+
+div.home-content-0{
+  height: auto;
+}
+
+div.home-content-0 p{
+  /* text-align: left; */
+  font-size: 110%;
+  padding: 5px;
+}
+
+p.red{
+  color: red;
+  font-size: 110%;
+}
+
+div.announcement{
+  width: 90%;
+  border-color: rgba(221,28,26,0.8);
+  border-style: ridge;
+  background-color: rgba(249,245,255, 0.8);
+  border-radius: 20px;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+div.announcement-title{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+div.announcement-text{
+  margin-left: 10px;
+  text-align: left;
+  width: 95%;
+  height: 100%;
+}
+
+.home a{
+  color: black;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.home a:hover{
+  color: #28262C;
+  text-decoration-style: solid;
+}
+
+
+.home-content-0 h1{
+  display:inline;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: normal;
+}
+
+div.map-content{
+  position:relative;
+  background-color: rgba(249,245,255, 0.8);
+  width: 90%;
+  border-radius: 10px;
+}
+
+div.map-option{
+  position: relative;
+  margin: 0px auto;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+div.map-option div:hover{
+  cursor: pointer;
+}
+
+div.map-option-0{
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  vertical-align: top;
+  width: 49.5%;
+  border-right: solid;
+  border-color: gray;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #BFC0C0;
+}
+
+div.map-option-1{
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  vertical-align: top;
+  width: 49.5%;
+  border-right: solid;
+  border-color: gray;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+div.file-link{
+  display: none;
+}
+
+.map-image{
+  width: 50%;
+  margin-top: 5px;
+}
+.map-image img{
+  display: block;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.sbs {
+  margin: 0px auto;
+  text-align: center;
+}
+
+.sbs div.sbss{
+  /* text-align: left; */
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+  /* padding: 5px; */
+}
+
+.sbss{
+  font-size: 80%;
+}
+
+#map {
+  z-index: 0;
+}

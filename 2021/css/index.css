@@ -12,10 +12,15 @@
   box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
 }
 
+.table_title {
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+
 .company_logo {
   width: 90%;
   height: auto;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .company_logo table {

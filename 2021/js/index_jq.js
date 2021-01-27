@@ -1,12 +1,9 @@
 $(document).ready(function(){
+  resize_content();
 
-
-  // resize_content();
-  //
-  // // location.reload();
-  // $(window).resize(function() {
-  //   resize_content();
-  // });
+  $(window).resize(function() {
+    resize_content();
+  });
 });
 
 function resize_content(){

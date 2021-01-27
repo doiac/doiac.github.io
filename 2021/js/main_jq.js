@@ -6,12 +6,14 @@ $(document).ready(function(){
     $(this).find('#arrow').hover(function(){
       $('ul').show();
       $('#arrow').attr('src','images/Icon/arrow.svg');
+      $('#enterprise_arrow').attr('src','../images/Icon/arrow.svg');
       $('.menu_4_text a').css('color','white');
       $('.menu_4_text a').css('text-shadow','-1px 1px 0 #FCA619, 1px 1px 0 #FCA619, 1px -1px 0 #FCA619, -1px -1px 0 #FCA619');
     });
     $(this).find('a').hover(function(){
       $('ul').show();
       $('#arrow').attr('src','images/Icon/arrow.svg');
+      $('#enterprise_arrow').attr('src','../images/Icon/arrow.svg');
       $('.menu_4_text a').css('color','white');
       $('.menu_4_text a').css('text-shadow','-1px 1px 0 #FCA619, 1px 1px 0 #FCA619, 1px -1px 0 #FCA619, -1px -1px 0 #FCA619');
     });
@@ -19,6 +21,7 @@ $(document).ready(function(){
     function(){
       $('ul').hide();
       $('#arrow').attr('src','images/Icon/arrow_origin.svg');
+      $('#enterprise_arrow').attr('src','../images/Icon/arrow_origin.svg');
       $('.menu_4_text a').css('color','inherit');
       $('.menu_4_text a').css('text-shadow','inherit');
     });

@@ -1,12 +1,12 @@
 $(document).ready(function(){
-  $("img").one("load", function() {
-    // do stuff
-    }).each(function() {
-    if(this.complete) {
-      // $(this).load(); // For jQuery < 3.0
-      $(this).trigger('load'); // For jQuery >= 3.0
-    }
-  });
+  // $("img").one("load", function() {
+  //   // do stuff
+  //   }).each(function() {
+  //   if(this.complete) {
+  //     // $(this).load(); // For jQuery < 3.0
+  //     $(this).trigger('load'); // For jQuery >= 3.0
+  //   }
+  // });
 
   console.log($('#com_00').find('img').height());
   resize_content();

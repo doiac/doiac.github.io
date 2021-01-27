@@ -6,6 +6,7 @@ function preload() {
   }
   console.log('Preload done.');
 }
+
 preload(
   "images/com_logo/chinese maritime transport ltd.jpg",
   "images/com_logo/culines.jpg",
@@ -37,4 +38,4 @@ preload(
   "images/com_logo/unimicron.png",
   "images/com_logo/ieeuc.png",
   "images/com_logo/tslines.png"
-)
+);

@@ -13,6 +13,7 @@ function check_footer() {
 }
 function reset_screen() {
   $('.center').css('height',$('header').height()-10+'px');
+  resize_content();
   check_footer();
 }
 

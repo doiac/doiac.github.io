@@ -1,1 +1,1 @@
-# The Website of the Employment Expo co-organized by NTOU DOIAC.
+# The Website for NTOU's Career by NTOU DOIAC.

@@ -1,0 +1,87 @@
+center {
+  background-color: white;
+}
+
+.com_title {
+  width: 40%;
+  height: 30%;
+  /* border: 1px solid black; */
+}
+
+.com_logo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  /* border: 1px solid black; */
+}
+
+.com_logo img{
+  display: block;
+  max-height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.com_name {
+  width: 100%;
+  height: 50%;
+}
+
+.com_name h2 {
+  margin: 0 auto;
+}
+
+.com_content {
+  width: 90%;
+  /* border: 1px solid black; */
+}
+
+.com_content a:hover {
+  color: #28262C;
+}
+
+.intro {
+  width: 70%;
+  text-align: left;
+  margin-top: 20px;
+  border: 5px solid black;
+  border-radius: 5px;
+}
+
+.welfare {
+    width: 70%;
+    text-align: left;
+    margin-top: 20px;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
+.welfare h4{
+  padding-left: 2ch;
+}
+
+.welfare ol{
+  list-style-position: inside;
+  text-align: left;
+  display: inline-block;
+  padding-left: 4ch;
+}
+
+.job {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 70%;
+  text-align: center;
+}
+
+.contact {
+  width: 70%;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.contact p {
+  font-size: 90%;
+  line-height: 180%;
+}

@@ -1,6 +1,7 @@
 $(document).ready(function(){
+  console.log($('#com_00').find('img').height());
   resize_content();
-
+  console.log('Ready done.');
   $(window).resize(function() {
     resize_content();
   });

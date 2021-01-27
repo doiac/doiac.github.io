@@ -4,6 +4,7 @@ function preload() {
     images[i] = new Image();
     images[i].src = preload.arguments[i];
   }
+  console.log('Preload done.');
 }
 preload(
   "images/com_logo/chinese maritime transport ltd.jpg",

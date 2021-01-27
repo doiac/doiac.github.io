@@ -7,6 +7,9 @@ $(document).ready(function(){
         $(this).css('height',$(this).find('img').height()+'px');
       }
     });
+    $('td').each(function(){
+      $(this).css('height',$(this).find('.inner_div').height() +'px');
+    });
   }
   resize_content();
 

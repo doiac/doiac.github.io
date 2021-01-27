@@ -192,9 +192,8 @@ footer {
   left: 0;
   bottom: 0;
   text-align: center;
-  /* background-color: #818181; */
   color: #000000;
-  background: rgba(129, 129, 129, 0.7);
+  background-color: rgba(129, 129, 129, 0.7);
 }
 
 footer img{

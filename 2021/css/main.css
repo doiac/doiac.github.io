@@ -43,7 +43,7 @@ header div.head_title{
   display: inline-block;
   width: 100%;
   height: 100%;
-  color: white;
+  color: #D7CDCC;
   background-color: rgba(0, 0, 255, 0.7);
   font-size: 200%;
 }
@@ -110,7 +110,7 @@ header div.head_title{
 }
 
 .menu a{
-  color: white;
+  color: #D7CDCC;
 }
 
 .menu a:hover{

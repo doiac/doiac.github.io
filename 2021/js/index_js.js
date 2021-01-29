@@ -9,7 +9,7 @@ var preload_images = [
   "images/com_logo/sinotech.png",
   "images/com_logo/pacificstargroup.jpg",
   "images/com_logo/t3ex-tec.png",
-  "images/com_logo/military intelligence bureau.png",
+  "images/com_logo/national security bureau.png",
   "images/com_logo/tci-bio.png",
   "images/com_logo/tradevan.png",
   "images/com_logo/hong yi ecological.jpg",

@@ -173,10 +173,10 @@ header div.head_title{
 .arrow{
   display: inline-block;
   vertical-align: bottom;
-  height: 90%;
+  height: 75%;
   width: 15%;
   /* border: 1px solid black; */
-  margin-left: -7px;
+  margin-left: -10px;
 }
 
 .arrow_img_flex {

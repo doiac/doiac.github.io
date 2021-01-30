@@ -3,6 +3,11 @@
     src: url(../fonts/Hanyi_Senty_Candy-color.ttf);
 }
 
+@font-face {
+    font-family: "SP";
+    src: url(../fonts/SentyPea.ttf);
+}
+
 html, body{
   height: 100%;
   width: 100%;
@@ -23,9 +28,9 @@ body{
   background-repeat:no-repeat;
   background-size: cover;
   background-position: bottom center;
-  font-family: HSC-c, "Microsoft JhengHei";
+  font-family: SP, SGB, "Microsoft JhengHei";
   background-color: rgba(255, 255, 255, 0.2);
-  font-weight: bold !important;
+  font-weight: bold;
 }
 
 div.back{
@@ -66,10 +71,10 @@ header div.head_title{
   height: 100%;
   width: 100%;
   float: left;
-  font-size: 130%;
+  /* font-size: 130%; */
   vertical-align: center;
-  left: 15px;
-  top: 15px;
+  left: 10px;
+  top: 5px;
   position: relative;
 }
 
@@ -96,6 +101,7 @@ header div.head_title{
   margin: 0px auto;
   text-align: center;
   margin-bottom: 1px;
+  font-size: 70%;
 }
 
 .menu>div{

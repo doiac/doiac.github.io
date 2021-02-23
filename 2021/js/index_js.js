@@ -28,26 +28,37 @@ var preload_images = [
   "images/com_logo/lawbroker.png",
   "images/com_logo/unimicron.png",
   "images/com_logo/ieeuc.png",
-  "images/com_logo/tslines.png"];
+  "images/com_logo/tslines.png",
+  "images/com_logo/bonitaco.png",
+  "images/com_logo/chienshing.jpg",
+  "images/com_logo/cip.png",
+  "images/com_logo/ckpublic.png",
+  "images/com_logo/crclass.jpg",
+  "images/com_logo/ctci.png",
+  "images/com_logo/cwptw.png",
+  "images/com_logo/decathlon.png",
+  "images/com_logo/gallant_ocean_international.png",
+  "images/com_logo/groupwagon.png",
+  "images/com_logo/ieiworld.jpg",
+  "images/com_logo/king-freight.png",
+  "images/com_logo/laurel.png",
+  "images/com_logo/lianhwa.jpg",
+  "images/com_logo/lungteh.png",
+  "images/com_logo/magicallogistic.png",
+  "images/com_logo/mol.jpg",
+  "images/com_logo/nanshanlife.png",
+  "images/com_logo/nipponexpress.jpg",
+  "images/com_logo/sigurd.jpg",
+  "images/com_logo/songchuan.png",
+  "images/com_logo/swancor-renewable.png",
+  "images/com_logo/tbcl.png",
+  "images/com_logo/upcc.jpg",
+  "images/com_logo/wellchoose.png",
+  "images/com_logo/yilin.png"];
 
 window.onload = function() {
   setTimeout(function() {
-  // // reference to <head>
-  // var head = document.getElementsByTagName('head')[0];
-  // // a new CSS
-  // var css = document.createElement('link');
-  // css.type = "text/css";
-  // css.rel = "stylesheet";
-  // css.href = "http://domain.tld/preload.css";
-  // // a new JS
-  // var js = document.createElement("script");
-  // js.type = "text/javascript";
-  // js.src = "http://domain.tld/preload.js";
-  // // preload JS and CSS
-  // head.appendChild(css);
-  // head.appendChild(js);
-  // preload image
-  for( i = 0; i < preload_images.length; i++)
-    new Image().src = preload_images[i];
+    for( i = 0; i < preload_images.length; i++)
+      new Image().src = preload_images[i];
   }, 1000);
 };

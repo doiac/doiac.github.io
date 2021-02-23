@@ -44,6 +44,14 @@ center {
   box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
 }
 
+.company_logo table td.songchuan_logo {
+  background-color: rgb(13, 77, 114);
+}
+
+.company_logo table td.gallant_ocean_international_logo {
+  background-color: rgb(94, 122, 37);
+}
+
 td:hover {
   cursor: pointer;
 }

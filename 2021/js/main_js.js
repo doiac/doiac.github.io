@@ -61,7 +61,7 @@ function click_menu(){
 }
 
 function change_menu_text(){
-  phone_menu_4.innerHTML = '<a href="https://doiac.github.io/2020/" target="_blank">2020</a><br><a href="https://ntoudoiac20190319.mystrikingly.com/" target="_blank">2019</a>';
+  phone_menu_4.innerHTML = '<a href="https://doiac.github.io/2020/" target="_blank">2020</a>．<a href="https://ntoudoiac20190319.mystrikingly.com/" target="_blank">2019</a>';
 }
 
 window.addEventListener('load',start,false);

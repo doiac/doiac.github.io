@@ -272,33 +272,37 @@ header div.head_title{
 }
 
 #phone_menu {
-  width: 70%;
+  width: 100%;
   height: 100%;
   text-align: center;
   margin: 0 auto;
+  border-top: 2px solid #FCA619;
   /* border: 1px solid black; */
   z-index: 10;
 }
 
 .phone_menu_flex {
-  width: 100%;
+  width: 50%;
   height: 100%;
   text-align: center;
   margin: 0 auto;
+  padding-top: 2px;
 }
 
 .phone_menu_text_flex{
   width: 100%;
   text-align: center;
   margin: 0 auto;
-  border-bottom: 2px solid #FCA619;
-  height: 15%;
+  height: 12%;
   display: flex;
   align-items: center;
 }
 
 .phone_menu_text_flex a {
   color: #D7CDCC;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: #D7CDCC;
 }
 
 .phone_menu_text a:hover{

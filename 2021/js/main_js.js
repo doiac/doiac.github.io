@@ -34,7 +34,7 @@ function reset_screen() {
   check_footer();
 }
 function reset_pdf(){
-  $('.pdf').css('height',$(window).height()*0.7+'px');
+  $('.pdf').css('height',$(window).height()+'px');
 }
 
 function click_menu(){

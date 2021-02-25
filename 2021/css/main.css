@@ -13,6 +13,10 @@ html, body{
   width: 100%;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -20,12 +24,8 @@ html, body{
 
 html.noscroll {
     position: fixed;
-    overflow-y: scroll;
-    width: 100%;
-}
-
-html.fixWindow {
-    position: fixed;
+    overflow-x: unset;
+    overflow-y: hidden;
     width: 100%;
 }
 

@@ -4,7 +4,6 @@ function start(){
   $('.menu_btn').css('width',$('.menu_btn').height()+'px');
   menu_btn = document.getElementById('menu_btn');
   phone_menu_4 = document.getElementById('phone_menu_4');
-  menu_btn.addEventListener('click', click_menu, false);
   reset_screen();
   window.addEventListener('resize', reset_screen, false);
 }
@@ -39,23 +38,26 @@ function reset_pdf(){
 }
 
 function click_menu(){
-  if(menu_btn.innerHTML == '☰'){
-    menu_btn.innerHTML = 'X';
-    console.log($(window).outerHeight());
-    $('header').css('height',$(window).outerHeight()+'px');
-    $("html").addClass("noscroll");
-    $('#title_nav_0, #title_nav_2').css('height', header_height + 'px');
-    $('#phone_menu').show();
-  }
-  else if(menu_btn.innerHTML == 'X'){
-    menu_btn.innerHTML = '☰';
-    $("html").removeClass("noscroll");
-    $('header').css('height',header_height + 'px');
-    $('header').css('inherit');
-    $('#phone_menu').hide();
-    phone_menu_4.innerHTML = '<a onclick="change_menu_text();" href="#">歷屆活動</a>';
-    reset_screen();
-  }
+  setTimeout(function(){
+    if(menu_btn.innerHTML == '☰'){
+        console.log('click');
+        menu_btn.innerHTML = 'X';
+        $('header').css('height',$(window).outerHeight()+'px');
+        console.log($('header').height());
+        $("html").addClass("noscroll");
+        $('#title_nav_0, #title_nav_2').css('height', header_height + 'px');
+        $('#phone_menu').removeClass('hide').addClass('show');
+    }
+    else if(menu_btn.innerHTML == 'X'){
+        menu_btn.innerHTML = '☰';
+        $("html").removeClass("noscroll");
+        $('header').css('height',header_height + 'px');
+        $('header').css('inherit');
+        $('#phone_menu').removeClass('show').addClass('hide');
+        phone_menu_4.innerHTML = '<a onclick="change_menu_text();" href="#">歷屆活動</a>';
+        reset_screen();
+    }
+  },0);
 }
 
 function change_menu_text(){

@@ -77,3 +77,9 @@ td img {
   width: 100%;
   display: block;
 }
+
+table td.blank_logo {
+  background-color: inherit;
+  border: none;
+  cursor: default;
+}

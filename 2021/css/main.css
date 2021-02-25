@@ -18,6 +18,17 @@ html, body{
   margin: 0;
 }
 
+html.noscroll {
+    position: fixed;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+html.fixWindow {
+    position: fixed;
+    width: 100%;
+}
+
 a {
   text-decoration: none;
 }
@@ -53,7 +64,7 @@ header div.head_title{
   font-size: 200%;
 }
 
-.head_title nav#title_nav_0{
+#title_nav_0{
   width: 40%;
   height: 100%;
   float: left;
@@ -68,7 +79,7 @@ header div.head_title{
 
 
 .head_title nav p{
-  height: 100%;
+  height: 90%;
   width: 100%;
   float: left;
   /* font-size: 130%; */
@@ -177,6 +188,42 @@ header div.head_title{
   margin: 0px;
 }
 
+#title_nav_2{
+  width: 30%;
+  height: 100%;
+  float: right;
+  position: relative;
+  align-self: center;
+  display: none;
+}
+
+#title_nav_2 a {
+  color: #601700;
+}
+
+.menu_flex {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.smallscreen_menu {
+  display: inline-block;
+  vertical-align: middle;
+  /* border: 1px solid black; */
+  width: 100%;
+}
+
+.menu_btn {
+  text-align: center;
+  float: right;
+  height: 100%;
+  font-size: 40px;
+  margin-right: 40px;
+  /* border: 1px solid black; */
+}
+
 .arrow{
   display: inline-block;
   vertical-align: top;
@@ -210,6 +257,48 @@ header div.head_title{
 .arrow img{
   width: 100%;
   display: block;
+}
+
+#phone_menu {
+  width: 100%;
+  height: 500px;
+  /* border: 1px solid black; */
+  display: none;
+}
+
+.phone_menu_flex {
+  width: 100%;
+  height: 100%;
+}
+
+.phone_menu_text_flex{
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: 2px solid #FCA619;
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.phone_menu_text_flex a {
+  color: #D7CDCC;
+}
+
+.phone_menu_text a:hover{
+  /* color: white; */
+  text-shadow: -1px 1px 0 #FCA619,
+                1px 1px 0 #FCA619,
+                1px -1px 0 #FCA619,
+               -1px -1px 0 #FCA619;
+}
+
+.phone_menu_text{
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  /* border: 1px solid black; */
+  width: 100%;
 }
 
 center {
@@ -291,13 +380,93 @@ footer nav{
   src: url(../fonts/StayWriter-Bold.otf);
 }
 
-@media only screen and (max-width: 975px){
+@media only screen and (max-width: 810px){
+  header {
+    height: 14%;
+    font-size: 90%;
+  }
+}
+
+@media only screen and (max-width: 730px){
+  header {
+    height: 12%;
+    font-size: 70%;
+  }
+}
+
+@media only screen and (max-width: 580px){
+  header {
+    height: 10%;
+    font-size: 60%;
+  }
+}
+
+@media only screen and (max-width: 930px){
+  .head_title {
+    text-align: center;
+    position: relative;
+  }
+  #title_nav_1{
+    display: none;
+  }
+  #title_nav_2 {
+    display: inline-block;
+    position: absolute;
+    /* border: 1px solid black; */
+  }
+  #title_nav_0{
+    display: inline-block;
+    float: none;
+    /* border: 1px solid black; */
+  }
+}
+
+@media only screen and (max-width: 500px){
+  #title_nav_0{
+    display: inline-block;
+    float: left;
+    width: 60%;
+    /* border: 1px solid black; */
+  }
+}
+
+@media only screen and (max-width: 490px){
+  #title_nav_0{
+    text-align: left;
+  }
+  .head_title nav p{
+    left: 0px;
+  }
+}
+
+@media only screen and (max-width: 335px){
+  header {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 280px){
+  header {
+    font-size: 40%;
+  }
+  .head_title nav p{
+    top: 20px;
+  }
+}
+
+@media only screen and (max-width: 230px){
+  header {
+    font-size: 30%;
+  }
+}
+
+@media only screen and (max-width: 990px){
   .menu{
     font-size: 45%;
   }
 }
 
-@media only screen and (min-width: 975px) and (max-width: 1170px) {
+@media only screen and (min-width: 990px) and (max-width: 1170px) {
   .menu{
     font-size: 50%;
   }

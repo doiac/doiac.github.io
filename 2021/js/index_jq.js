@@ -10,6 +10,16 @@ $(document).ready(function(){
 
   console.log($('#com_00').find('img').height());
   resize_content();
+  // console.log($.cookie("the_cookie")==null);
+  // if($.cookie("first")==null){
+      // $.cookie('the_cookie', 'the_value', { expires: 7, path: '/' });
+      // console.log($.cookie("the_cookie")==null);
+  //     location.reload();
+  // }
+  // else{
+  //   //pass
+  // }
+
   console.log('Ready done.');
   $(window).resize(function() {
     resize_content();

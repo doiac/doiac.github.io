@@ -30,6 +30,10 @@ $(document).ready(function(){
       $('.menu_4_text a').css('text-shadow','inherit');
     });
 
+  // $('.menu_btn').hover(function(){
+  //
+  // });
+
   $( window ).resize(function() {
     $('.title_img').css('width',$('#title_img').width()+'px');
     $('.title_text').css('width',$('#title_nav_0').width()*(1-$('.title_img').width()/$('#title_nav_0').width()-0.05)+'px');

@@ -30,6 +30,13 @@ function reset_screen() {
     $('header').css('height',header_height + 'px');
     menu_btn.innerHTML = '☰';
   }
+  if($(window).outerWidth()<=400){
+    $('.bottom span').empty();
+    $('.bottom span').append('Copyright &copy 2021<br>');
+  }
+  else
+    $('.bottom span br').remove();
+
   reset_pdf();
   check_footer();
 }

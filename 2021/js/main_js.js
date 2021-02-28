@@ -30,7 +30,7 @@ function reset_screen() {
     $('header').css('height',header_height + 'px');
     menu_btn.innerHTML = '☰';
   }
-  if($(window).outerWidth()<=400){
+  if($(window).outerWidth()<=415){
     $('.bottom span').empty();
     $('.bottom span').append('Copyright &copy 2021<br>');
   }

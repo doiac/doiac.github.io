@@ -138,6 +138,10 @@ header div.head_title{
   float: left;
 }
 
+div.menu_2 {
+  width: 36%;
+}
+
 .menu a{
   /* display: inline-block; */
   color: #D7CDCC;
@@ -300,9 +304,9 @@ header div.head_title{
 
 .phone_menu_text_flex a {
   color: #D7CDCC;
-  text-decoration: underline;
+  /* text-decoration: underline;
   text-underline-position: under;
-  text-decoration-color: #D7CDCC;
+  text-decoration-color: #D7CDCC; */
 }
 
 .phone_menu_text a:hover{
@@ -536,7 +540,7 @@ footer nav{
     text-align: left;
   }
 }
-@media only screen and (max-width:500px){
+@media only screen and (max-width:550px){
   footer {
     align-items: center;
     text-align: center;
@@ -545,5 +549,9 @@ footer nav{
     display: inherit;
     float: none;
     position: static;
+  }
+  footer img {
+    height: 25px;
+    width: 25px;
   }
 }

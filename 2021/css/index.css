@@ -52,7 +52,7 @@ center {
   background-color: rgb(94, 122, 37);
 }
 
-td:hover {
+.company_logo td:hover {
   cursor: pointer;
 }
 
@@ -78,7 +78,7 @@ td img {
   display: block;
 }
 
-table td.blank_logo {
+.company_logo table td.blank_logo {
   background-color: inherit;
   border: none;
   cursor: default;
@@ -86,6 +86,7 @@ table td.blank_logo {
 
 .company_map {
   margin-top: 50px;
+  margin-bottom: 50px;
   width: 80%;
 }
 
@@ -93,8 +94,96 @@ table td.blank_logo {
   width: 100%;
 }
 
+.iphone_activity{
+  width: 90%;
+  color: #D7CDCC;
+  background-color: rgba(0,0,0,0.5);
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+  font-size: 120%;
+  padding-left: 10px;
+}
+
+.iphone_activity table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.iphone_activity caption{
+  padding-bottom: 10px;
+}
+
+.iphone_activity td{
+  width: 50%;
+}
+
+.iphone_activity img {
+  display: block;
+  border-radius: 10px;
+}
+
+.iphone_activity .content_text,h3 {
+  font-family: DFKai-sb, "Microsoft JhengHei";
+}
+
+.iphone_activity a {
+  color: rgba(124, 198, 254, 1.0);
+}
+
+.iphone_activity a:hover{
+  color: rgba(124, 198, 254, 0.7);
+}
+
+a.to_seminar{
+  color: rgba(124, 198, 254, 1.0);
+}
+
+a.to_seminar:hover{
+  color: rgba(124, 198, 254, 0.7);
+}
+
+.iphone_activity tr.lda th, tr.lda td{
+  text-align: center;
+}
+
+.lda th {
+  font-size: 120%;
+}
+
+.iphone_activity .bd th, .bd td{
+  border: 1px solid;
+  text-align: center;
+}
+
+.iphone_activity .blank_tr {
+  height: 10px;
+}
+
+.iphone_activity .notice{
+  font-family: DFKai-sb, "Microsoft JhengHei";
+}
+
+.iphone_activity .notice th{
+  text-align: left;
+  font-size: 120%;
+}
+
+.iphone_activity .precautions {
+  font-family: DFKai-sb, "Microsoft JhengHei";
+  font-size: 90%;
+}
+
+.iphone_activity .precautions p{
+  line-height: 1.5;
+}
+
 @media only screen and (min-width:1000px){
   .company_map{
     width: 50%;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  .table_title{
+    font-size: 120%;
   }
 }

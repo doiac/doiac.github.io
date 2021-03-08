@@ -101,6 +101,7 @@ td img {
   box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
   font-size: 120%;
   padding-left: 10px;
+  padding-right: 10px;
 }
 
 .iphone_activity table{
@@ -176,6 +177,11 @@ a.to_seminar:hover{
   line-height: 1.5;
 }
 
+img.JRF {
+  width: 90%;
+  margin: 0 auto;
+}
+
 @media only screen and (min-width:1000px){
   .company_map{
     width: 50%;
@@ -185,5 +191,53 @@ a.to_seminar:hover{
 @media only screen and (max-width:500px) {
   .table_title{
     font-size: 120%;
+  }
+}
+
+@media only screen and (max-width:470px) {
+  caption h1 {
+    font-size: 150%;
+  }
+}
+
+@media only screen and (max-width:420px) {
+  tbody {
+    font-size: 90%;
+  }
+}
+
+@media only screen and (max-width:380px) {
+  tbody {
+    font-size: 80%;
+  }
+}
+
+@media only screen and (max-width:360px) {
+  caption h1 {
+    font-size: 130%;
+  }
+}
+
+@media only screen and (max-width:340px) {
+  tbody {
+    font-size: 70%;
+  }
+}
+
+@media only screen and (max-width:300px) {
+  caption h1 {
+    font-size: 110%;
+  }
+  tbody {
+    font-size: 60%;
+  }
+}
+
+@media only screen and (max-width:250px) {
+  caption h1 {
+    font-size: 100%;
+  }
+  tbody {
+    font-size: 50%;
   }
 }

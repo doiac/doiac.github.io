@@ -18,13 +18,13 @@ html {
   width: 100%;
   z-index: 1;
   overflow-x: hidden;
-  position: absolute;
 }
 
 body {
   height: 100%;
   width: 100%;
   z-index: 2;
+  overflow-x: hidden;
 }
 
 html.noscroll {

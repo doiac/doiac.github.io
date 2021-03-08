@@ -25,7 +25,7 @@ function reset_screen() {
     header_height = $('header').height();
   }
   if($(window).outerWidth() >= 930){
-    $('#phone_menu').hide();
+    $('#phone_menu').removeClass('show').addClass('hide');
     $("html").removeClass("noscroll");
     $('header').css('height',header_height + 'px');
     menu_btn.innerHTML = '☰';

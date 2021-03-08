@@ -86,4 +86,10 @@ $(document).ready(function(e) {
         }).attr("src", preload_images[i]);
       }
     }
+
+  $( window ).on('load',function() {
+    if (window.location.href.indexOf('reload')==-1) {
+         window.location.replace(window.location.href+'?reload');
+    }
+  });
 });

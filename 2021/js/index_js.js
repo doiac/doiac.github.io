@@ -29,7 +29,6 @@ var preload_images = [
   "images/com_logo/unimicron.png",
   "images/com_logo/ieeuc.png",
   "images/com_logo/tslines.png",
-  "images/com_logo/bonitaco.png",
   "images/com_logo/chienshing.jpg",
   "images/com_logo/cip.png",
   "images/com_logo/ckpublic.png",
@@ -56,9 +55,35 @@ var preload_images = [
   "images/com_logo/wellchoose.png",
   "images/com_logo/yilin.png"];
 
-window.onload = function() {
-  setTimeout(function() {
-    for( i = 0; i < preload_images.length; i++)
-      new Image().src = preload_images[i];
-  }, 1000);
-};
+// window.onload = function() {
+//   setTimeout(function() {
+//     for( i = 0; i < preload_images.length; i++)
+//       new Image().src = preload_images[i];
+//   }, 1000);
+// };
+
+$(document).ready(function(e) {
+    //showing startup image. By default it will be display:none via css.
+    $('.company_logo').show();
+
+    //load img
+    var total = preload_images.length;
+    var imgLoaded = 0;
+    for (var i in preload_images) {
+      for(var j = 0; j < 55; j++){
+        $("com_0" + j + " img").on('load', function() {
+            imgLoaded++;
+            if (imgLoaded == total) {
+                //when all images loaded we hide start up image.
+                $('.company_logo').hide();
+            }
+        }).on('error',function() {
+            imgLoaded++;
+            if (imgLoaded == total) {
+                //when all images loaded even error in img loading, we hide startup image.
+                $('.company_logo').hide();
+            }
+        }).attr("src", preload_images[i]);
+      }
+    }
+});

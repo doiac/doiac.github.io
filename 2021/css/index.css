@@ -196,13 +196,13 @@ img.JRF {
 
 @media only screen and (max-width:470px) {
   caption h1 {
-    font-size: 150%;
+    font-size: 145%;
   }
 }
 
 @media only screen and (max-width:420px) {
   tbody {
-    font-size: 90%;
+    font-size: 85%;
   }
 }
 

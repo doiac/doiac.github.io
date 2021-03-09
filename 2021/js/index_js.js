@@ -107,7 +107,6 @@ function sact(){
       function(json) {
           var e = json.feed.entry;
               $(e).each(function() {
-                var myJSON = JSON.stringify(this);
                 $('#threshold').text(this.gsx$_cn6ca.$t);
             });
       }

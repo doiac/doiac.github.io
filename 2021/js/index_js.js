@@ -87,9 +87,29 @@ $(document).ready(function(e) {
       }
     }
 
+  sact();
+  setInterval(function(){
+    sact();
+  }, 5000);
+
   $( window ).on('load',function() {
     if (window.location.href.indexOf('reload')==-1) {
          window.location.replace(window.location.href+'?reload');
     }
   });
 });
+
+function sact(){
+  var sheetid = '119RvgAjI7yff0y2STp0g6QEh26HWROzFKb1i-8Chncc',
+      sheetno = 2,
+      dataurl = 'https://spreadsheets.google.com/feeds/list/' + sheetid + '/' + sheetno + '/public/values?alt=json-in-script&callback=?';
+  $.getJSON(dataurl,
+      function(json) {
+          var e = json.feed.entry;
+              $(e).each(function() {
+                var myJSON = JSON.stringify(this);
+                $('#threshold').text(this.gsx$_cn6ca.$t);
+            });
+      }
+  );
+}

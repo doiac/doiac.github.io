@@ -92,11 +92,22 @@ $(document).ready(function(e) {
     sact();
   }, 5000);
 
-  $( window ).on('load',function() {
-    if (window.location.href.indexOf('reload')==-1) {
-         window.location.replace(window.location.href+'?reload');
-    }
-  });
+  if(Cookies.get('reload') === Cookies.get('nothing')){
+    Cookies.set('reload', 'true', {expires: 0.5, path: ''});
+    window.location.reload();
+  }
+
+
+  // $( window ).on('load',function() {
+  //   if (window.location.href.indexOf('reload')==-1) {
+  //        window.location.replace(window.location.href+'?reload');
+  //   }
+  // });
+
+  // if (!!window.performance && window.performance.navigation.type === 1) {
+  //           // console.log('Reloading');
+  //           window.location.replace('https://doiac.github.io/2021/');
+  //     }
 });
 
 function sact(){

@@ -94,7 +94,7 @@ $(document).ready(function(e) {
 
   if(Cookies.get('FIRST_RELOAD') === Cookies.get('nothing')){
     Cookies.set('FIRST_RELOAD', '1');
-    window.location.reload();
+    window.location.replace(window.location.href);
   }
   else
     Cookies.remove('FIRST_RELOAD');

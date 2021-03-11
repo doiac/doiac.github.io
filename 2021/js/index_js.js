@@ -99,7 +99,6 @@ $(document).ready(function(e) {
     }
     else
       Cookies.remove('FIRST_RELOAD');
-    }
   });
 
   // if (!!window.performance && window.performance.navigation.type === 1) {

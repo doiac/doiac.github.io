@@ -40,6 +40,7 @@ center {
   height: auto;
   border: 1px solid black;
   text-align: center;
+  min-height: 70.5625px;
   background-color: rgba(255, 255, 255, 1.0);
   box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
 }

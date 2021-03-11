@@ -93,9 +93,11 @@ $(document).ready(function(e) {
   }, 5000);
 
   if(Cookies.get('reload') === Cookies.get('nothing')){
-    Cookies.set('reload', 'true', {expires: 0.5, path: ''});
+    Cookies.set('reload', '1');
     window.location.reload();
   }
+  else
+    Cookies.remove('reload');
 
 
   // $( window ).on('load',function() {

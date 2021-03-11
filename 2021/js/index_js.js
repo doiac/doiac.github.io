@@ -92,12 +92,12 @@ $(document).ready(function(e) {
     sact();
   }, 5000);
 
-  if(Cookies.get('reload') === Cookies.get('nothing')){
-    Cookies.set('reload', '1');
+  if(Cookies.get('FIRST_RELOAD') === Cookies.get('nothing')){
+    Cookies.set('FIRST_RELOAD', '1');
     window.location.reload();
   }
   else
-    Cookies.remove('reload');
+    Cookies.remove('FIRST_RELOAD');
 
 
   // $( window ).on('load',function() {

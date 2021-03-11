@@ -92,19 +92,15 @@ $(document).ready(function(e) {
     sact();
   }, 5000);
 
-  if(Cookies.get('FIRST_RELOAD') === Cookies.get('nothing')){
-    Cookies.set('FIRST_RELOAD', '1');
-    location.reload(false);
-  }
-  else
-    Cookies.remove('FIRST_RELOAD');
-
-
-  // $( window ).on('load',function() {
-  //   if (window.location.href.indexOf('reload')==-1) {
-  //        window.location.replace(window.location.href+'?reload');
-  //   }
-  // });
+  $( window ).on('load',function() {
+    if(Cookies.get('FIRST_RELOAD') === Cookies.get('nothing')){
+      Cookies.set('FIRST_RELOAD', '1');
+      location.reload(false);
+    }
+    else
+      Cookies.remove('FIRST_RELOAD');
+    }
+  });
 
   // if (!!window.performance && window.performance.navigation.type === 1) {
   //           // console.log('Reloading');

@@ -3,6 +3,14 @@
   padding-bottom: 20px;
 }
 
+.topic a {
+  color: inherit;
+}
+
+.topic a:hover{
+  color: rgba(0, 0, 0, 0.7);
+}
+
 .content{
   width: 80%;
   box-shadow: 12px 12px 7px rgba(0, 0, 0, 0.7);
